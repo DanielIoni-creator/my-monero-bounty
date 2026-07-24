@@ -53,3 +53,6 @@ This project pays **micro-bounties in Monero (XMR)** for small fixes:
 
 MIT - Free for everyone to use and modify.
 
+
+## Privacy Policy
+This project respects your privacy. No personal data is collected.
