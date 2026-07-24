@@ -1,0 +1,23 @@
+- name: "💰 spicciolo"
+  color: "2ecc71"
+  description: "0.0005 XMR - Typo/link fix"
+
+- name: "💰 spiccioletto"
+  color: "27ae60"
+  description: "0.001 XMR - Warning/comment"
+
+- name: "💰 spicciona"
+  color: "f1c40f"
+  description: "0.003 XMR - Test/README"
+
+- name: "💰 superspiccio"
+  color: "e67e22"
+  description: "0.01 XMR - Small feature"
+
+- name: "claimed"
+  color: "3498db"
+  description: "Someone is working on this"
+
+- name: "paid"
+  color: "2c3e50"
+  description: "Bounty paid 🎉"

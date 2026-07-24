@@ -1,0 +1,50 @@
+name: "💰 Spicciolo Issue (XMR Bounty)"
+description: "Fix this in 15 minutes and earn Monero"
+title: "[SPICCIO] Brief description"
+labels: ["💰 spicciolo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        ## 💰 This issue pays in Monero (XMR)
+        Complete this task and earn a micro-bounty.
+  
+  - type: dropdown
+    id: bounty
+    attributes:
+      label: "💰 Bounty Amount"
+      options:
+        - "0.0005 XMR (Spicciolo - typo/link fix)"
+        - "0.001 XMR (Spiccioletto - warning/comment)"
+        - "0.003 XMR (Spicciona - test/README)"
+        - "0.01 XMR (SuperSpiccio - small feature)"
+  
+  - type: input
+    id: problem
+    attributes:
+      label: "📌 The Problem"
+      placeholder: "The 'Save' button is misaligned"
+  
+  - type: textarea
+    id: solution
+    attributes:
+      label: "🎯 Solution Required"
+      placeholder: "Add margin-left: auto to .btn-save"
+  
+  - type: input
+    id: file
+    attributes:
+      label: "📁 File to Modify"
+      placeholder: "src/components/Button.js"
+  
+  - type: textarea
+    id: steps
+    attributes:
+      label: "📝 Steps to Claim"
+      value: |
+        1. Comment "I'll take this!" to claim
+        2. Open a PR within 24 hours
+        3. Provide a valid Monero address for payment
+        4. Payment sent within 24h of PR merge
+        
+        ⚠️ No Monero wallet? Create one: https://www.getmonero.org/downloads/

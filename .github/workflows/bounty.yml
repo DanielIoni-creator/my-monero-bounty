@@ -1,0 +1,35 @@
+name: Bounty Management
+on:
+  issues:
+    types: [opened, labeled]
+jobs:
+  label-bounty:
+    runs-on: ubuntu-latest
+    if: contains(github.event.issue.labels.*.name, '💰 spicciolo')
+    steps:
+      - name: Add bounty info comment
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const bountyMap = {
+              '💰 spicciolo': '0.0005 XMR (≈ €0.10)',
+              '💰 spiccioletto': '0.001 XMR (≈ €0.20)',
+              '💰 spicciona': '0.003 XMR (≈ €0.60)',
+              '💰 superspiccio': '0.01 XMR (≈ €2.00)'
+            };
+            const labels = context.payload.issue.labels;
+            let bountyText = '';
+            for (const label of labels) {
+              if (bountyMap[label.name]) {
+                bountyText = `💰 This issue pays **${bountyMap[label.name]}** in Monero (XMR)`;
+                break;
+              }
+            }
+            if (bountyText) {
+              await github.rest.issues.createComment({
+                issue_number: context.payload.issue.number,
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                body: bountyText + '\n\nTo claim: comment "I\'ll take this!"'
+              });
+            }
