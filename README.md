@@ -8,11 +8,11 @@
 
 Tokenizing the world's most valuable real estate, one city at a time. Private, accessible, and global.
 
-**30 Tokens · 5 Continents · €85,800,000 in Tokenized Assets**
+**38 Tokens · 5 Continents · €119,400,000 in Tokenized Assets**
 
 ---
 
-## 📊 **Complete Token Portfolio (30 Tokens | 5 Continents | €85.8M)**
+## 📊 **Complete Token Portfolio (38 Tokens | 5 Continents | €119.4M)**
 
 ### 🇪🇺 **Europe (11 Cities)**
 
@@ -39,15 +39,14 @@ Tokenizing the world's most valuable real estate, one city at a time. Private, a
 | 12 | **SRE** | Singapore 🇸🇬 | Singapore | €2,000,000 |
 | 13 | **TKO** | Tokyo 🇯🇵 | Japan | €3,200,000 |
 | 14 | **DBX** | Dubai 🇦🇪 | UAE | €5,000,000 |
-| 15 | **SEL** | Seoul 🇰🇷 | South Korea | €3,800,000 |
-| 16 | **BSN** | Busan 🇰🇷 | South Korea | €2,500,000 |
-| 17 | **TPE** | Taipei 🇹🇼 | Taiwan | €3,500,000 |
-| 18 | **SGN** | Ho Chi Minh 🇻🇳 | Vietnam | €2,500,000 |
-| 19 | **HAN** | Hanoi 🇻🇳 | Vietnam | €2,000,000 |
-| 20 | **DAD** | Da Nang 🇻🇳 | Vietnam | €1,500,000 |
-| 21 | **BKK** | Bangkok 🇹🇭 | Thailand | €3,000,000 |
-| 22 | **HKT** | Phuket 🇹🇭 | Thailand | €2,000,000 |
-| 23 | **CNX** | Chiang Mai 🇹🇭 | Thailand | €1,500,000 |
+| 15 | **BSN** | Busan 🇰🇷 | South Korea | €2,500,000 |
+| 16 | **TPE** | Taipei 🇹🇼 | Taiwan | €3,500,000 |
+| 17 | **SGN** | Ho Chi Minh 🇻🇳 | Vietnam | €2,500,000 |
+| 18 | **HAN** | Hanoi 🇻🇳 | Vietnam | €2,000,000 |
+| 19 | **DAD** | Da Nang 🇻🇳 | Vietnam | €1,500,000 |
+| 20 | **BKK** | Bangkok 🇹🇭 | Thailand | €3,000,000 |
+| 21 | **HKT** | Phuket 🇹🇭 | Thailand | €2,000,000 |
+| 22 | **CNX** | Chiang Mai 🇹🇭 | Thailand | €1,500,000 |
 
 ---
 
@@ -55,9 +54,9 @@ Tokenizing the world's most valuable real estate, one city at a time. Private, a
 
 | # | Token | City | Country | Value |
 |---|-------|------|---------|-------|
-| 24 | **NYC** | New York 🇺🇸 | USA | €3,000,000 |
-| 25 | **TOR** | Toronto 🇨🇦 | Canada | €4,000,000 |
-| 26 | **SFO** | San Francisco 🇺🇸 | USA | €4,500,000 |
+| 23 | **NYC** | New York 🇺🇸 | USA | €3,000,000 |
+| 24 | **TOR** | Toronto 🇨🇦 | Canada | €4,000,000 |
+| 25 | **SFO** | San Francisco 🇺🇸 | USA | €4,500,000 |
 
 ---
 
@@ -65,7 +64,7 @@ Tokenizing the world's most valuable real estate, one city at a time. Private, a
 
 | # | Token | City | Country | Value |
 |---|-------|------|---------|-------|
-| 27 | **SYD** | Sydney 🇦🇺 | Australia | €4,500,000 |
+| 26 | **SYD** | Sydney 🇦🇺 | Australia | €4,500,000 |
 
 ---
 
@@ -73,9 +72,9 @@ Tokenizing the world's most valuable real estate, one city at a time. Private, a
 
 | # | Token | City | Country | Value |
 |---|-------|------|---------|-------|
-| 28 | **CPT** | Cape Town 🇿🇦 | South Africa | €2,000,000 |
-| 29 | **NBO** | Nairobi 🇰🇪 | Kenya | €1,800,000 |
-| 30 | **LOS** | Lagos 🇳🇬 | Nigeria | €2,500,000 |
+| 27 | **CPT** | Cape Town 🇿🇦 | South Africa | €2,000,000 |
+| 28 | **NBO** | Nairobi 🇰🇪 | Kenya | €1,800,000 |
+| 29 | **LOS** | Lagos 🇳🇬 | Nigeria | €2,500,000 |
 
 ---
 
@@ -88,7 +87,7 @@ Tokenizing the world's most valuable real estate, one city at a time. Private, a
 | 🇺🇸 **North America** | 3 | 3 | €11,500,000 |
 | 🇦🇺 **Oceania** | 1 | 1 | €4,500,000 |
 | 🇿🇦 **Africa** | 3 | 3 | €6,300,000 |
-| | **TOTAL** | **30** | **€87,800,000** |
+| | **TOTAL** | **29** | **€87,800,000** |
 
 ---
 
@@ -102,7 +101,7 @@ Tokenizing the world's most valuable real estate, one city at a time. Private, a
 │ Rimini, Rome, Florence, Turin, Padua, Bologna │
 │ │
 │ 🇦🇸 ASIA (12): │
-│ Singapore, Tokyo, Dubai, Seoul, Busan, Taipei │
+│ Singapore, Tokyo, Dubai, Busan, Taipei │
 │ Ho Chi Minh, Hanoi, Da Nang, Bangkok, Phuket, Chiang Mai │
 │ │
 │ 🇺🇸 NORTH AMERICA (3): │
@@ -140,18 +139,6 @@ All tokens are built on **Tari** (Monero's Layer 2):
 - **Discord**: [discord.gg/MyZubsterGateway](https://discord.gg/MyZubsterGateway)
 - **GitHub**: [github.com/rossieugenio17/my-monero-bounty](https://github.com/rossieugenio17/my-monero-bounty)
 
-Stay updated, ask questions, and contribute!
-
----
-
-## 📋 **Community Guidelines**
-
-1. **Be respectful** — Treat everyone with respect
-2. **Stay on topic** — Keep discussions relevant
-3. **No spam** — No self-promotion or spam
-4. **Help others** — Share your knowledge
-5. **Privacy first** — Respect everyone's privacy
-
 ---
 
 ## 💰 **Developer Bounties: "Spiccioli"**
@@ -165,61 +152,47 @@ We pay developers in **Monero (XMR)** for contributions:
 | `feature` | 0.10 XMR |
 | `security` | 0.20 XMR |
 
-**How to claim:**
-1. Open an issue with the bounty template
-2. Apply a label (e.g., "bug", "feature")
-3. GitHub Action auto-assigns a bounty in XMR
-4. Comment: `"I'll take this!"`
-5. Complete the task and submit a PR
-6. Get paid in Monero (privately)
-
 ---
 
-## 🛠️ **Technical Stack**
+## 🛠️ **API Reference**
 
-| Component | Technology |
-|-----------|------------|
-| **Blockchain** | Tari (Layer 2) + Monero (Privacy) |
-| **Wallet RPC** | monero-wallet-rpc v0.18.5.1 |
-| **Backend** | Node.js, Express.js, MongoDB |
-| **Deployment** | Docker, nginx |
-| **Bounty System** | GitHub Actions ("Spiccioli") |
+### GET /api/tokens
+Lista tutti i token
 
----
-
-## 🎯 **Quick Start**
-
-### **1. Connect to the Dashboard**
-
-http://localhost
-text
-
-
-### **2. View All Tokens**
 ```bash
-curl -s http://localhost/api/tokens | jq '.[] | {name, symbol, assetLocation, assetValue}'
+curl -s http://localhost:8080/api/tokens | jq '.[] | {name, symbol, assetLocation, assetValue}'
 
-3. Get Token Details
+GET /api/tokens/balance/:walletAddress
+
+Saldo di un wallet (tutti i token posseduti)
 bash
 
-curl -s http://localhost/api/tokens/ID_TOKEN | jq '.'
+curl -s http://localhost:8080/api/tokens/balance/6a5f742332b226d34448d39c | jq '.'
+
+🎯 Quick Start
+1. Connect to the Dashboard
+text
+
+http://localhost:8080
+
+2. View All Tokens
+bash
+
+curl -s http://localhost:8080/api/tokens | jq '.[] | {name, symbol, assetLocation, assetValue}'
+
+3. Get Wallet Balance
+bash
+
+curl -s http://localhost:8080/api/tokens/balance/6a5f742332b226d34448d39c | jq '.'
 
 🚀 Roadmap 2026-2027
 Phase	Focus	Status
 1	Foundation	✅ Complete
 2	Community & Visibility	🚀 In Progress
-3	Asset Expansion	✅ 30 Tokens
+3	Asset Expansion	✅ 38 Tokens
 4	Technical Upgrades	📅 Q4 2026
 5	Cross-Chain & DeFi	📅 Q1 2027
 6	Governance & DAO	📅 Q2 2027
-📊 Token Distribution by Continent
-Continent	Cities	Tokens	Value
-🇪🇺 Europe	11	11	€33,000,000
-🇦🇸 Asia	12	12	€32,500,000
-🇺🇸 North America	3	3	€11,500,000
-🇦🇺 Oceania	1	1	€4,500,000
-🇿🇦 Africa	3	3	€6,300,000
-	TOTAL	30	€87,800,000
 🔗 Connect with Me
 Platform	Link
 GitHub	github.com/rossieugenio17
@@ -233,4 +206,4 @@ MIT
 
 Built on Tari · Secured by Monero · Tokenizing the World 🌍🔒
 
-#Tari #Monero #RWA #Tokenization #RealEstate #Privacy #Web3 #DeFi #Global #Portfolio #Italy #Asia #Europe #America #Africa #Oceania
+#Tari #Monero #RWA #Tokenization #RealEstate #Privacy #Web3 #DeFi #Global #Portfolio
