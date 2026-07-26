@@ -1,0 +1,252 @@
+2026-07-26 12:26:15.152	    7dc09fa6dc00	INFO	logging	contrib/epee/src/mlog.cpp:274	New log categories: *:WARNING,net:FATAL,net.http:FATAL,net.ssl:FATAL,net.p2p:FATAL,net.cn:FATAL,daemon.rpc:FATAL,global:INFO,verify:FATAL,serialization:FATAL,daemon.rpc.payment:ERROR,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2026-07-26 12:26:15.152	    7dc09fa6dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	This is the RPC monero wallet. It needs to connect to a monero
+2026-07-26 12:26:15.152	    7dc09fa6dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	daemon to work correctly.
+2026-07-26 12:26:15.152	    7dc09fa6dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Monero 'Fluorine Fermi' (v0.18.5.1-release)
+2026-07-26 12:26:15.152	    7dc09fa6dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Logging to monero-wallet-rpc.log
+2026-07-26 12:26:15.153	    7dc09fa6dc00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4915	Loading wallet...
+2026-07-26 12:26:17.808	    7dc09fa6dc00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:5355	!r. THROW EXCEPTION: error::invalid_password
+2026-07-26 12:26:17.809	    7dc09fa6dc00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4977	Wallet initialization failed: invalid password
+2026-07-26 12:27:52.569	    77400a71dc00	INFO	logging	contrib/epee/src/mlog.cpp:274	New log categories: *:WARNING,net:FATAL,net.http:FATAL,net.ssl:FATAL,net.p2p:FATAL,net.cn:FATAL,daemon.rpc:FATAL,global:INFO,verify:FATAL,serialization:FATAL,daemon.rpc.payment:ERROR,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2026-07-26 12:27:52.569	    77400a71dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	This is the RPC monero wallet. It needs to connect to a monero
+2026-07-26 12:27:52.569	    77400a71dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	daemon to work correctly.
+2026-07-26 12:27:52.569	    77400a71dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Monero 'Fluorine Fermi' (v0.18.5.1-release)
+2026-07-26 12:27:52.569	    77400a71dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Logging to monero-wallet-rpc.log
+2026-07-26 12:27:52.571	    77400a71dc00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4915	Loading wallet...
+2026-07-26 12:27:55.251	    77400a71dc00	WARNING	wallet.wallet2	src/wallet/wallet2.cpp:6497	Loaded wallet keys file, with public address: 4APG2UXM1XS6aE8XTw397TSPuExwXoh5vd8GgjFDxmaXeWePDbcXdM2CujviKPprW2NczN2WdKKGqLUn1FJ3PSGRSkLnMTG
+2026-07-26 12:27:55.279	    77400a71dc00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:27:55.279	    77400a71dc00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4963	Initial refresh failed: no connection to daemon
+2026-07-26 12:27:55.283	    77400a71dc00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:449	Failed to query mining status: No connection to daemon
+2026-07-26 12:27:55.283	    77400a71dc00	INFO	global	contrib/epee/include/net/http_server_impl_base.h:94	Binding on 127.0.0.1 (IPv4):18081
+2026-07-26 12:27:57.098	    77400a71dc00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4987	Starting wallet RPC server
+2026-07-26 12:27:57.303	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:27:57.303	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:28:17.319	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:28:17.319	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:28:30.993	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4997	Stopped wallet RPC server
+2026-07-26 12:28:30.993	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:5000	Saving wallet...
+2026-07-26 12:28:30.998	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:5002	Successfully saved
+2026-07-26 12:28:31.101	    78ef87792c00	INFO	logging	contrib/epee/src/mlog.cpp:274	New log categories: *:WARNING,net:FATAL,net.http:FATAL,net.ssl:FATAL,net.p2p:FATAL,net.cn:FATAL,daemon.rpc:FATAL,global:INFO,verify:FATAL,serialization:FATAL,daemon.rpc.payment:ERROR,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2026-07-26 12:28:31.101	    78ef87792c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	This is the RPC monero wallet. It needs to connect to a monero
+2026-07-26 12:28:31.101	    78ef87792c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	daemon to work correctly.
+2026-07-26 12:28:31.101	    78ef87792c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Monero 'Fluorine Fermi' (v0.18.5.1-release)
+2026-07-26 12:28:31.101	    78ef87792c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Logging to monero-wallet-rpc.log
+2026-07-26 12:28:31.103	    78ef87792c00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4915	Loading wallet...
+2026-07-26 12:28:31.103	    78ef87792c00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:384	Password needed without prompt function
+2026-07-26 12:28:56.213	    726228d44c00	INFO	logging	contrib/epee/src/mlog.cpp:274	New log categories: *:WARNING,net:FATAL,net.http:FATAL,net.ssl:FATAL,net.p2p:FATAL,net.cn:FATAL,daemon.rpc:FATAL,global:INFO,verify:FATAL,serialization:FATAL,daemon.rpc.payment:ERROR,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2026-07-26 12:28:56.214	    726228d44c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	This is the RPC monero wallet. It needs to connect to a monero
+2026-07-26 12:28:56.214	    726228d44c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	daemon to work correctly.
+2026-07-26 12:28:56.214	    726228d44c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Monero 'Fluorine Fermi' (v0.18.5.1-release)
+2026-07-26 12:28:56.214	    726228d44c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Logging to monero-wallet-rpc.log
+2026-07-26 12:28:56.215	    726228d44c00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4915	Loading wallet...
+2026-07-26 12:28:58.239	    726228d44c00	WARNING	wallet.wallet2	src/wallet/wallet2.cpp:6497	Loaded wallet keys file, with public address: 4APG2UXM1XS6aE8XTw397TSPuExwXoh5vd8GgjFDxmaXeWePDbcXdM2CujviKPprW2NczN2WdKKGqLUn1FJ3PSGRSkLnMTG
+2026-07-26 12:28:58.267	    726228d44c00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:28:58.267	    726228d44c00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4963	Initial refresh failed: no connection to daemon
+2026-07-26 12:28:58.270	    726228d44c00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:449	Failed to query mining status: No connection to daemon
+2026-07-26 12:28:58.270	    726228d44c00	INFO	global	contrib/epee/include/net/http_server_impl_base.h:94	Binding on 127.0.0.1 (IPv4):18081
+2026-07-26 12:28:58.839	    726228d44c00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4987	Starting wallet RPC server
+2026-07-26 12:28:59.044	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:28:59.044	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:29:19.062	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:29:19.062	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:29:38.928	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4997	Stopped wallet RPC server
+2026-07-26 12:29:38.928	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:5000	Saving wallet...
+2026-07-26 12:29:38.933	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:5002	Successfully saved
+2026-07-26 12:29:39.038	    794e77547c00	INFO	logging	contrib/epee/src/mlog.cpp:274	New log categories: *:WARNING,net:FATAL,net.http:FATAL,net.ssl:FATAL,net.p2p:FATAL,net.cn:FATAL,daemon.rpc:FATAL,global:INFO,verify:FATAL,serialization:FATAL,daemon.rpc.payment:ERROR,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2026-07-26 12:29:39.038	    794e77547c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	This is the RPC monero wallet. It needs to connect to a monero
+2026-07-26 12:29:39.038	    794e77547c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	daemon to work correctly.
+2026-07-26 12:29:39.038	    794e77547c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Monero 'Fluorine Fermi' (v0.18.5.1-release)
+2026-07-26 12:29:39.038	    794e77547c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Logging to monero-wallet-rpc.log
+2026-07-26 12:29:39.040	    794e77547c00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4915	Loading wallet...
+2026-07-26 12:29:42.289	    794e77547c00	WARNING	wallet.wallet2	src/wallet/wallet2.cpp:6497	Loaded wallet keys file, with public address: 4APG2UXM1XS6aE8XTw397TSPuExwXoh5vd8GgjFDxmaXeWePDbcXdM2CujviKPprW2NczN2WdKKGqLUn1FJ3PSGRSkLnMTG
+2026-07-26 12:29:44.075	    791a52a7dc00	INFO	logging	contrib/epee/src/mlog.cpp:274	New log categories: *:WARNING,net:FATAL,net.http:FATAL,net.ssl:FATAL,net.p2p:FATAL,net.cn:FATAL,daemon.rpc:FATAL,global:INFO,verify:FATAL,serialization:FATAL,daemon.rpc.payment:ERROR,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2026-07-26 12:29:44.075	    791a52a7dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	This is the RPC monero wallet. It needs to connect to a monero
+2026-07-26 12:29:44.075	    791a52a7dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	daemon to work correctly.
+2026-07-26 12:29:44.075	    791a52a7dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Monero 'Fluorine Fermi' (v0.18.5.1-release)
+2026-07-26 12:29:44.075	    791a52a7dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Logging to monero-wallet-rpc.log
+2026-07-26 12:29:44.076	    791a52a7dc00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4915	Loading wallet...
+2026-07-26 12:29:46.499	    791a52a7dc00	WARNING	wallet.wallet2	src/wallet/wallet2.cpp:6497	Loaded wallet keys file, with public address: 4APG2UXM1XS6aE8XTw397TSPuExwXoh5vd8GgjFDxmaXeWePDbcXdM2CujviKPprW2NczN2WdKKGqLUn1FJ3PSGRSkLnMTG
+2026-07-26 12:30:11.532	    720df7d1dc00	INFO	logging	contrib/epee/src/mlog.cpp:274	New log categories: *:WARNING,net:FATAL,net.http:FATAL,net.ssl:FATAL,net.p2p:FATAL,net.cn:FATAL,daemon.rpc:FATAL,global:INFO,verify:FATAL,serialization:FATAL,daemon.rpc.payment:ERROR,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2026-07-26 12:30:11.532	    720df7d1dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	This is the RPC monero wallet. It needs to connect to a monero
+2026-07-26 12:30:11.532	    720df7d1dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	daemon to work correctly.
+2026-07-26 12:30:11.532	    720df7d1dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Monero 'Fluorine Fermi' (v0.18.5.1-release)
+2026-07-26 12:30:11.532	    720df7d1dc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Logging to monero-wallet-rpc.log
+2026-07-26 12:30:11.535	    720df7d1dc00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4915	Loading wallet...
+2026-07-26 12:30:12.730	    720df7d1dc00	WARNING	wallet.wallet2	src/wallet/wallet2.cpp:6497	Loaded wallet keys file, with public address: 4APG2UXM1XS6aE8XTw397TSPuExwXoh5vd8GgjFDxmaXeWePDbcXdM2CujviKPprW2NczN2WdKKGqLUn1FJ3PSGRSkLnMTG
+2026-07-26 12:30:12.763	    720df7d1dc00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:12.768	    720df7d1dc00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:12.772	    720df7d1dc00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:12.775	    720df7d1dc00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:12.775	    720df7d1dc00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:30:12.775	    720df7d1dc00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4963	Initial refresh failed: no connection to daemon
+2026-07-26 12:30:12.779	    720df7d1dc00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:449	Failed to query mining status: No connection to daemon
+2026-07-26 12:30:12.779	    720df7d1dc00	INFO	global	contrib/epee/include/net/http_server_impl_base.h:94	Binding on 127.0.0.1 (IPv4):18081
+2026-07-26 12:30:13.553	    720df7d1dc00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4987	Starting wallet RPC server
+2026-07-26 12:30:13.758	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:13.762	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:13.766	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:13.771	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:13.771	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:30:13.771	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:30:33.787	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:33.791	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:33.795	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:33.798	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:33.799	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:30:33.799	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:30:53.814	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:53.819	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:53.822	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:53.825	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:30:53.826	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:30:53.826	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:31:13.843	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:31:13.847	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:31:13.850	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:31:13.853	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:31:13.853	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:31:13.853	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:31:33.873	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:31:33.877	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:31:33.881	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:31:33.885	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:31:33.885	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:31:33.885	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:31:53.902	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:31:53.905	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:31:53.909	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:31:53.913	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:31:53.913	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:31:53.913	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:32:13.930	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:32:13.933	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:32:13.937	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:32:13.940	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:32:13.940	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:32:13.940	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:32:33.958	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:32:33.962	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:32:33.965	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:32:33.968	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:32:33.969	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:32:33.969	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:32:53.987	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:32:53.992	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:32:53.995	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:32:53.999	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:32:53.999	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:32:53.999	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:33:13.965	    7ec618cdac00	INFO	logging	contrib/epee/src/mlog.cpp:274	New log categories: *:WARNING,net:FATAL,net.http:FATAL,net.ssl:FATAL,net.p2p:FATAL,net.cn:FATAL,daemon.rpc:FATAL,global:INFO,verify:FATAL,serialization:FATAL,daemon.rpc.payment:ERROR,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2026-07-26 12:33:13.965	    7ec618cdac00	INFO	msgwriter	src/common/scoped_message_writer.h:102	This is the RPC monero wallet. It needs to connect to a monero
+2026-07-26 12:33:13.965	    7ec618cdac00	INFO	msgwriter	src/common/scoped_message_writer.h:102	daemon to work correctly.
+2026-07-26 12:33:13.965	    7ec618cdac00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Monero 'Fluorine Fermi' (v0.18.5.1-release)
+2026-07-26 12:33:13.965	    7ec618cdac00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Logging to monero-wallet-rpc.log
+2026-07-26 12:33:13.967	    7ec618cdac00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4915	Loading wallet...
+2026-07-26 12:33:14.017	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:14.024	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:14.029	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:14.033	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:14.033	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:33:14.034	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:33:15.817	    7ec618cdac00	ERROR	util	src/common/util.cpp:109	Error locking fd 16: 11 (Resource temporarily unavailable)
+2026-07-26 12:33:15.817	    7ec618cdac00	ERROR	util	src/common/util.cpp:309	Failed to lock /root/monero-wallet/gateway-wallet.keys: Resource temporarily unavailable
+2026-07-26 12:33:15.817	    7ec618cdac00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:6489	!is_keys_file_locked(). THROW EXCEPTION: error::wallet_internal_error
+2026-07-26 12:33:15.817	    7ec618cdac00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4977	Wallet initialization failed: internal error: "/root/monero-wallet/gateway-wallet.keys" is opened by another wallet program
+2026-07-26 12:33:34.055	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:34.060	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:34.065	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:34.069	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:34.069	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:33:34.069	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:33:41.048	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4997	Stopped wallet RPC server
+2026-07-26 12:33:41.048	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:5000	Saving wallet...
+2026-07-26 12:33:41.055	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:5002	Successfully saved
+2026-07-26 12:33:41.204	    74fc306efc00	INFO	logging	contrib/epee/src/mlog.cpp:274	New log categories: *:WARNING,net:FATAL,net.http:FATAL,net.ssl:FATAL,net.p2p:FATAL,net.cn:FATAL,daemon.rpc:FATAL,global:INFO,verify:FATAL,serialization:FATAL,daemon.rpc.payment:ERROR,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2026-07-26 12:33:41.204	    74fc306efc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	This is the RPC monero wallet. It needs to connect to a monero
+2026-07-26 12:33:41.204	    74fc306efc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	daemon to work correctly.
+2026-07-26 12:33:41.204	    74fc306efc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Monero 'Fluorine Fermi' (v0.18.5.1-release)
+2026-07-26 12:33:41.204	    74fc306efc00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Logging to monero-wallet-rpc.log
+2026-07-26 12:33:41.206	    74fc306efc00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4915	Loading wallet...
+2026-07-26 12:33:44.706	    74fc306efc00	WARNING	wallet.wallet2	src/wallet/wallet2.cpp:6497	Loaded wallet keys file, with public address: 4APG2UXM1XS6aE8XTw397TSPuExwXoh5vd8GgjFDxmaXeWePDbcXdM2CujviKPprW2NczN2WdKKGqLUn1FJ3PSGRSkLnMTG
+2026-07-26 12:33:44.737	    74fc306efc00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:44.740	    74fc306efc00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:44.743	    74fc306efc00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:44.746	    74fc306efc00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:44.746	    74fc306efc00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:33:44.746	    74fc306efc00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4963	Initial refresh failed: no connection to daemon
+2026-07-26 12:33:44.750	    74fc306efc00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:449	Failed to query mining status: No connection to daemon
+2026-07-26 12:33:44.750	    74fc306efc00	INFO	global	contrib/epee/include/net/http_server_impl_base.h:94	Binding on 127.0.0.1 (IPv4):18081
+2026-07-26 12:33:45.954	    74fc306efc00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4987	Starting wallet RPC server
+2026-07-26 12:33:46.159	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:46.162	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:46.166	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:46.170	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:33:46.171	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:33:46.171	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:34:06.186	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:34:06.189	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:34:06.192	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:34:06.196	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:34:06.196	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:34:06.196	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:34:26.214	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:34:26.217	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:34:26.221	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:34:26.225	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:34:26.225	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:34:26.225	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:34:46.241	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:34:46.246	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:34:46.250	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:34:46.255	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:34:46.255	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:34:46.256	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:35:06.272	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:35:06.276	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:35:06.279	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:35:06.282	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:35:06.282	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:35:06.282	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:35:14.966	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4997	Stopped wallet RPC server
+2026-07-26 12:35:14.966	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:5000	Saving wallet...
+2026-07-26 12:35:14.973	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:5002	Successfully saved
+2026-07-26 12:35:15.076	    7f51ce5d6c00	INFO	logging	contrib/epee/src/mlog.cpp:274	New log categories: *:WARNING,net:FATAL,net.http:FATAL,net.ssl:FATAL,net.p2p:FATAL,net.cn:FATAL,daemon.rpc:FATAL,global:INFO,verify:FATAL,serialization:FATAL,daemon.rpc.payment:ERROR,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2026-07-26 12:35:15.076	    7f51ce5d6c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	This is the RPC monero wallet. It needs to connect to a monero
+2026-07-26 12:35:15.076	    7f51ce5d6c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	daemon to work correctly.
+2026-07-26 12:35:15.076	    7f51ce5d6c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Monero 'Fluorine Fermi' (v0.18.5.1-release)
+2026-07-26 12:35:15.076	    7f51ce5d6c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Logging to monero-wallet-rpc.log
+2026-07-26 12:35:15.077	    7f51ce5d6c00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4915	Loading wallet...
+2026-07-26 12:35:18.363	    7f51ce5d6c00	WARNING	wallet.wallet2	src/wallet/wallet2.cpp:6497	Loaded wallet keys file, with public address: 4APG2UXM1XS6aE8XTw397TSPuExwXoh5vd8GgjFDxmaXeWePDbcXdM2CujviKPprW2NczN2WdKKGqLUn1FJ3PSGRSkLnMTG
+2026-07-26 12:35:18.390	    7f51ce5d6c00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:35:18.394	    7f51ce5d6c00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:35:18.397	    7f51ce5d6c00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:35:18.399	    7f51ce5d6c00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:35:18.400	    7f51ce5d6c00	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:35:18.400	    7f51ce5d6c00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4963	Initial refresh failed: no connection to daemon
+2026-07-26 12:35:18.402	    7f51ce5d6c00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:449	Failed to query mining status: No connection to daemon
+2026-07-26 12:35:18.402	    7f51ce5d6c00	INFO	global	contrib/epee/include/net/http_server_impl_base.h:94	Binding on 127.0.0.1 (IPv4):18081
+2026-07-26 12:35:19.808	    7f51ce5d6c00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4987	Starting wallet RPC server
+2026-07-26 12:35:20.014	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:35:20.018	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:35:20.021	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:35:20.025	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:15991	!r. THROW EXCEPTION: tools::error::no_connection_to_daemon
+2026-07-26 12:35:20.025	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:4292	pull_blocks failed, try_count=3
+2026-07-26 12:35:20.025	[RPC0]	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:248	Exception at while refreshing, what=no connection to daemon
+2026-07-26 12:35:35.741	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4997	Stopped wallet RPC server
+2026-07-26 12:35:35.741	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:5000	Saving wallet...
+2026-07-26 12:35:35.748	[SRV_MAIN]	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:5002	Successfully saved
+2026-07-26 12:35:35.850	    7859392b7c00	INFO	logging	contrib/epee/src/mlog.cpp:274	New log categories: *:WARNING,net:FATAL,net.http:FATAL,net.ssl:FATAL,net.p2p:FATAL,net.cn:FATAL,daemon.rpc:FATAL,global:INFO,verify:FATAL,serialization:FATAL,daemon.rpc.payment:ERROR,stacktrace:INFO,logging:INFO,msgwriter:INFO
+2026-07-26 12:35:35.851	    7859392b7c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	This is the RPC monero wallet. It needs to connect to a monero
+2026-07-26 12:35:35.851	    7859392b7c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	daemon to work correctly.
+2026-07-26 12:35:35.851	    7859392b7c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Monero 'Fluorine Fermi' (v0.18.5.1-release)
+2026-07-26 12:35:35.851	    7859392b7c00	INFO	msgwriter	src/common/scoped_message_writer.h:102	Logging to monero-wallet-rpc.log
+2026-07-26 12:35:35.852	    7859392b7c00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4915	Loading wallet...
+2026-07-26 12:35:39.190	    7859392b7c00	WARNING	wallet.wallet2	src/wallet/wallet2.cpp:6497	Loaded wallet keys file, with public address: 4APG2UXM1XS6aE8XTw397TSPuExwXoh5vd8GgjFDxmaXeWePDbcXdM2CujviKPprW2NczN2WdKKGqLUn1FJ3PSGRSkLnMTG
+2026-07-26 12:35:56.217	    7859392b7c00	WARNING	wallet.wallet2	src/wallet/wallet2.cpp:2591	Received money: 0.010000000000, with tx: <a2673170c12ac720642c2fbb1cc29515998be8798e556027538e9e99bf7fbdbf>
+2026-07-26 12:35:56.260	    7859392b7c00	ERROR	wallet.rpc	src/wallet/wallet_rpc_server.cpp:449	Failed to query mining status: No connection to daemon
+2026-07-26 12:35:56.260	    7859392b7c00	INFO	global	contrib/epee/include/net/http_server_impl_base.h:94	Binding on 127.0.0.1 (IPv4):18081
+2026-07-26 12:35:58.144	    7859392b7c00	WARNING	wallet.rpc	src/wallet/wallet_rpc_server.cpp:4987	Starting wallet RPC server
+2026-07-26 12:38:35.849	[RPC0]	WARNING	net.dns	src/common/dns_utils.cpp:343	Invalid DNSSEC TXT record signature for INDIRIZZO_DESTINAZIONE: validation failure <INDIRIZZO_DESTINAZIONE. TXT IN>: no NSEC3 records from 127.0.0.53 for DS INDIRIZZO_DESTINAZIONE. while building chain of trust
+2026-07-26 12:38:35.849	[RPC0]	ERROR	net.dns	src/common/dns_utils.cpp:493	wrong address: INDIRIZZO_DESTINAZIONE
+2026-07-26 12:38:50.978	[RPC0]	ERROR	net.dns	src/common/dns_utils.cpp:493	wrong address: 4Abc123...
+2026-07-26 12:39:14.231	[RPC0]	WARNING	wallet.wallet2	src/wallet/wallet2.cpp:8676	Requested ring size 1 too low, using 16
+2026-07-26 12:39:14.406	[RPC0]	ERROR	wallet.wallet2	src/wallet/wallet2.cpp:11210	total_needed_money > balance_subtotal || min_fee > balance_subtotal. THROW EXCEPTION: error::not_enough_money
