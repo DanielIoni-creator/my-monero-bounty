@@ -1,39 +1,96 @@
-# Contributing Guide
+ Contributing to MyZubsterGateway
 
-## Quick Start
+First off, thank you for considering contributing to MyZubsterGateway! 🎉
 
-1. **Claim an issue** with 💰 label
-2. **Fork the repo** and create a branch
-3. **Fix the issue** (keep it small!)
-4. **Open a PR** with your Monero address
-5. **Get paid** 🎉
+We welcome contributions from everyone. Here are the guidelines to help you get started.
 
-## Rules
+---
 
-### For Contributors
-- Only claim **one issue at a time**
-- You have **24 hours** to open a PR
-- PR must reference the issue: `Fixes #123`
-- Include your Monero address in PR description
+## 📋 Code of Conduct
 
-### For Maintainers
-- Review PRs within 24 hours
-- Send XMR immediately after merge
-- Label paid issues with `paid`
+By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md). Please read it before contributing.
 
-## Getting a Monero Wallet
+---
 
-1. Download: https://www.getmonero.org/downloads/
-2. Create a wallet (write down the seed!)
-3. Get your **public address** (starts with 4... or 8...)
+## 🐛 How to Report a Bug
 
-## Privacy FAQ
+If you find a bug, please open an issue on GitHub with the following information:
 
-**Q: Do you store my personal data?**  
-A: No. We only store your Monero address temporarily.
+- **Description**: A clear and concise description of the bug.
+- **Steps to Reproduce**: Step-by-step instructions to reproduce the issue.
+- **Expected Behavior**: What you expected to happen.
+- **Screenshots**: If applicable, add screenshots to help explain.
 
-**Q: Can I contribute anonymously?**  
-A: Yes. Your GitHub username is public, but we never link it to your Monero address.
+---
 
-**Q: Who can see my Monero transaction?**  
-A: Everyone can see the amount on the blockchain, but no one can see who sent or received it.
+## 💡 How to Suggest a Feature
+
+We are always open to new ideas. To suggest a feature:
+
+1. **Check existing issues** – to avoid duplicates.
+2. **Open a new issue** with the label `enhancement`.
+3. **Describe the feature**: What problem does it solve? How should it work?
+
+---
+
+## 🛠️ How to Contribute Code
+
+1. **Fork the repository**.
+2. **Create a new branch** for your feature or bugfix:
+   ```bash
+   git checkout -b feat/your-feature-name
+
+or
+bash
+
+git checkout -b fix/your-bugfix-name
+
+    Make your changes, following the existing code style.
+
+    Write tests for your changes (if applicable).
+
+    Commit your changes with a clear message:
+    bash
+
+    git commit -m "feat: add new feature X"
+
+    Push to your fork:
+    bash
+
+    git push -u origin feat/your-feature-name
+
+    Open a Pull Request (PR) against the main branch.
+
+✅ Pull Request Guidelines
+
+    One PR per feature – keep changes focused.
+
+    Include tests – ensure your code is covered.
+
+    Update documentation – if you change behavior, update the README.
+
+    Link to the issue – if your PR fixes an issue, include Fixes #issue-number in the description.
+
+🧪 Running Tests Locally
+bash
+
+# Install dependencies
+npm install
+
+# Run tests
+npm test
+
+# Run linter
+npm run lint
+
+📚 Resources
+
+    Project Documentation: https://github.com/DanielIoni-creator/myzubster-docs
+
+    GitHub Issues: https://github.com/DanielIoni-creator/MyZubsterGateway/issues
+
+❓ Questions?
+
+If you have any questions, feel free to open an issue or contact the maintainer.
+
+Happy coding! 🚀
