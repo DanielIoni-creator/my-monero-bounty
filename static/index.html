@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MyZubster Gateway - Tari Asset Manager</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+            color: #fff;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        .logo { font-size: 52px; font-weight: bold; margin-bottom: 10px; }
+        .logo span { color: #00d4ff; }
+        .subtitle { font-size: 20px; color: #888; margin-bottom: 30px; }
+        
+        .status-box {
+            background: rgba(0,212,255,0.08);
+            padding: 25px;
+            border-radius: 16px;
+            border: 1px solid rgba(0,212,255,0.15);
+            margin-bottom: 30px;
+            display: inline-block;
+            min-width: 300px;
+        }
+        .status-dot {
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background: #00ff88;
+            border-radius: 50%;
+            animation: pulse 2s infinite;
+            vertical-align: middle;
+            margin-right: 10px;
+        }
+        @keyframes pulse {
+            0%, 100% { opacity: 1; transform: scale(1); }
+            50% { opacity: 0.4; transform: scale(0.8); }
+        }
+        .status-text { font-size: 18px; vertical-align: middle; }
+        .status-sub { font-size: 13px; color: #666; margin-top: 8px; }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            margin: 30px 0;
+        }
+        .feature {
+            background: rgba(255,255,255,0.04);
+            padding: 25px 20px;
+            border-radius: 12px;
+            border: 1px solid rgba(255,255,255,0.06);
+            transition: all 0.3s;
+        }
+        .feature:hover {
+            transform: translateY(-5px);
+            border-color: rgba(0,212,255,0.3);
+            background: rgba(255,255,255,0.06);
+        }
+        .feature .icon { font-size: 36px; margin-bottom: 10px; }
+        .feature .label { font-weight: 600; font-size: 16px; }
+        .feature .desc { font-size: 13px; color: #888; margin-top: 5px; }
+        
+        .links {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin: 30px 0;
+        }
+        .links a {
+            display: inline-block;
+            background: rgba(0,212,255,0.1);
+            color: #00d4ff;
+            padding: 8px 20px;
+            border-radius: 20px;
+            text-decoration: none;
+            font-size: 14px;
+            transition: all 0.3s;
+            border: 1px solid rgba(0,212,255,0.1);
+        }
+        .links a:hover {
+            background: rgba(0,212,255,0.2);
+            transform: scale(1.05);
+        }
+        
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid rgba(255,255,255,0.06);
+            color: #555;
+            font-size: 14px;
+        }
+        .footer a { color: #00d4ff; text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+        .badge {
+            display: inline-block;
+            background: rgba(0,212,255,0.08);
+            padding: 2px 12px;
+            border-radius: 12px;
+            font-size: 11px;
+            color: #00d4ff;
+            margin: 0 4px;
+        }
+        
+        @media (max-width: 600px) {
+            .logo { font-size: 32px; }
+            .features { grid-template-columns: 1fr 1fr; }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="logo">🏢 <span>MyZubster</span> Gateway</div>
+        <div class="subtitle">Tari Asset Manager · Powered by Monero</div>
+        
+        <div class="status-box">
+            <div>
+                <span class="status-dot"></span>
+                <span class="status-text">Connected to Tari Network</span>
+            </div>
+            <div class="status-sub">⚡ Layer 2 · 🔒 Privacy First · 🌐 Live</div>
+        </div>
+
+        <div class="features">
+            <div class="feature">
+                <div class="icon">📦</div>
+                <div class="label">Tokenized Assets</div>
+                <div class="desc">Real-world assets on-chain</div>
+            </div>
+            <div class="feature">
+                <div class="icon">💰</div>
+                <div class="label">Spiccioli Bounty</div>
+                <div class="desc">Earn Monero (XMR)</div>
+            </div>
+            <div class="feature">
+                <div class="icon">🔒</div>
+                <div class="label">Privacy</div>
+                <div class="desc">Private transactions</div>
+            </div>
+            <div class="feature">
+                <div class="icon">🏗️</div>
+                <div class="label">RWA Tokenization</div>
+                <div class="desc">Milano Real Estate (MRE)</div>
+            </div>
+        </div>
+
+        <div class="links">
+            <a href="/api/tokens">📡 View Tokens</a>
+            <a href="/api/health">❤️ Health Check</a>
+            <a href="https://github.com" target="_blank">🐙 GitHub</a>
+        </div>
+
+        <div class="footer">
+            <p>
+                Built with ❤️ on <strong>Tari</strong> · Powered by <strong>Monero</strong>
+                <span class="badge">RWA</span>
+                <span class="badge">Privacy</span>
+            </p>
+            <p style="margin-top:8px;font-size:12px;color:#444;">
+                MyZubsterGateway v1.0 · 2026
+            </p>
+        </div>
+    </div>
+</body>
+</html>

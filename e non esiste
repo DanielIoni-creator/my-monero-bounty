@@ -1,0 +1,21 @@
+[0;1;32m●[0m nginx.service - A high performance web server and a reverse proxy server
+     Loaded: loaded (]8;;file://myzubster/usr/lib/systemd/system/nginx.service/usr/lib/systemd/system/nginx.service]8;;; [0;1;32menabled[0m; preset: [0;1;32menabled[0m)
+     Active: [0;1;32mactive (running)[0m since Sun 2026-07-26 13:19:43 CEST; 41s ago
+       Docs: ]8;;man:nginx(8)man:nginx(8)]8;;
+    Process: 424722 ExecStartPre=/usr/sbin/nginx -t -q -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+    Process: 424725 ExecStart=/usr/sbin/nginx -g daemon on; master_process on; (code=exited, status=0/SUCCESS)
+   Main PID: 424726 (nginx)
+      Tasks: 5 (limit: 9431)
+     Memory: 4.5M (peak: 5.0M)
+        CPU: 43ms
+     CGroup: /system.slice/nginx.service
+             ├─[0;38;5;245m424726 "nginx: master process /usr/sbin/nginx -g daemon on; master_process on;"[0m
+             ├─[0;38;5;245m424727 "nginx: worker process"[0m
+             ├─[0;38;5;245m424728 "nginx: worker process"[0m
+             ├─[0;38;5;245m424729 "nginx: worker process"[0m
+             └─[0;38;5;245m424730 "nginx: worker process"[0m
+
+Jul 26 13:19:43 myzubster systemd[1]: Starting nginx.service - A high performance web server and a reverse proxy server...
+Jul 26 13:19:43 myzubster nginx[424722]: 2026/07/26 13:19:43 [warn] 424722#424722: "ssl_stapling" ignored, no OCSP responder URL in the certificate "/etc/letsencrypt/live/myzubster.com/fullchain.pem"
+Jul 26 13:19:43 myzubster nginx[424725]: 2026/07/26 13:19:43 [warn] 424725#424725: "ssl_stapling" ignored, no OCSP responder URL in the certificate "/etc/letsencrypt/live/myzubster.com/fullchain.pem"
+Jul 26 13:19:43 myzubster systemd[1]: Started nginx.service - A high performance web server and a reverse proxy server.
