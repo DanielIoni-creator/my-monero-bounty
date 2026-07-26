@@ -8,29 +8,51 @@
 
 Tokenizing the world's most valuable real estate, one city at a time. Private, accessible, and global.
 
----
-
-## 📊 **Token Portfolio (8 Tokens | 4 Continents | €26.9M)**
-
-| # | Token | City | Country | Value |
-|---|-------|------|---------|-------|
-| 1 | **MRE** | Milan 🇮🇹 | Italy | €1,000,000 |
-| 2 | **SRE** | Singapore 🇸🇬 | Singapore | €2,000,000 |
-| 3 | **NYC** | New York 🇺🇸 | USA | €3,000,000 |
-| 4 | **LON** | London 🇬🇧 | UK | €4,700,000 |
-| 5 | **TKO** | Tokyo 🇯🇵 | Japan | €3,200,000 |
-| 6 | **DBX** | Dubai 🇦🇪 | UAE | €5,000,000 |
-| 7 | **PAR** | Paris 🇫🇷 | France | €3,500,000 |
-| 8 | **SYD** | Sydney 🇦🇺 | Australia | €4,500,000 |
-| | | | **TOTAL** | **€26,900,000** |
+**12 Tokens · 4 Continents · €42,700,000 in Tokenized Assets**
 
 ---
 
-## 🌍 **Global Coverage**
-🇪🇺 Europe: Milan (MRE), London (LON), Paris (PAR)
-🇦🇸 Asia: Singapore (SRE), Tokyo (TKO), Dubai (DBX)
-🇺🇸 America: New York (NYC)
-🇦🇺 Oceania: Sydney (SYD)
+## 📊 **Complete Token Portfolio (12 Tokens | 4 Continents | €42.7M)**
+
+| # | Token | City | Country | Continent | Value |
+|---|-------|------|---------|-----------|-------|
+| 1 | **MRE** | Milan 🇮🇹 | Italy | Europe | €1,000,000 |
+| 2 | **SRE** | Singapore 🇸🇬 | Singapore | Asia | €2,000,000 |
+| 3 | **NYC** | New York 🇺🇸 | USA | North America | €3,000,000 |
+| 4 | **LON** | London 🇬🇧 | UK | Europe | €4,700,000 |
+| 5 | **TKO** | Tokyo 🇯🇵 | Japan | Asia | €3,200,000 |
+| 6 | **DBX** | Dubai 🇦🇪 | UAE | Asia | €5,000,000 |
+| 7 | **PAR** | Paris 🇫🇷 | France | Europe | €3,500,000 |
+| 8 | **SYD** | Sydney 🇦🇺 | Australia | Oceania | €4,500,000 |
+| 9 | **BER** | Berlin 🇩🇪 | Germany | Europe | €3,000,000 |
+| 10 | **SEL** | Seoul 🇰🇷 | South Korea | Asia | €3,800,000 |
+| 11 | **ZRH** | Zurich 🇨🇭 | Switzerland | Europe | €5,000,000 |
+| 12 | **TOR** | Toronto 🇨🇦 | Canada | North America | €4,000,000 |
+| | | | | **TOTAL** | **€42,700,000** |
+
+---
+
+## 🌍 **Global Coverage Map**
+
+┌─────────────────────────────────────────────────────────────────┐
+│ WORLD MAP │
+│ │
+│ 🇪🇺 EUROPE (5): │
+│ • Milan (MRE) 🇮🇹 • London (LON) 🇬🇧 │
+│ • Paris (PAR) 🇫🇷 • Berlin (BER) 🇩🇪 │
+│ • Zurich (ZRH) 🇨🇭 │
+│ │
+│ 🇦🇸 ASIA (4): │
+│ • Singapore (SRE) 🇸🇬 • Tokyo (TKO) 🇯🇵 │
+│ • Dubai (DBX) 🇦🇪 • Seoul (SEL) 🇰🇷 │
+│ │
+│ 🇺🇸 NORTH AMERICA (2): │
+│ • New York (NYC) 🇺🇸 • Toronto (TOR) 🇨🇦 │
+│ │
+│ 🇦🇺 OCEANIA (1): │
+│ • Sydney (SYD) 🇦🇺 │
+│ │
+└─────────────────────────────────────────────────────────────────┘
 text
 
 
@@ -97,8 +119,7 @@ We pay developers in **Monero (XMR)** for contributions:
 |-----------|------------|
 | **Blockchain** | Tari (Layer 2) + Monero (Privacy) |
 | **Wallet RPC** | monero-wallet-rpc v0.18.5.1 |
-| **Backend** | Node.js, Express.js |
-| **Database** | MongoDB |
+| **Backend** | Node.js, Express.js, MongoDB |
 | **Deployment** | Docker, nginx |
 | **Bounty System** | GitHub Actions ("Spiccioli") |
 
@@ -106,30 +127,36 @@ We pay developers in **Monero (XMR)** for contributions:
 
 ## 🎯 **Quick Start**
 
-### **1. Connect to the Gateway**
+### **1. Connect to the Dashboard**
 
-http://localhost:3001
+http://localhost
 text
 
 
 ### **2. View All Tokens**
 ```bash
-curl -s -H "Authorization: Bearer $TOKEN" \
-  http://localhost:3001/api/tokens | jq '.[] | {name, symbol, assetLocation, assetValue}'
+curl -s http://localhost/api/tokens | jq '.[] | {name, symbol, assetLocation, assetValue}'
 
-3. Check Dashboard
-text
+3. Get Token Details
+bash
 
-http://localhost:8080
+curl -s http://localhost/api/tokens/ID_TOKEN | jq '.'
 
 🚀 Roadmap 2026-2027
 Phase	Focus	Status
 1	Foundation	✅ Complete
 2	Community & Visibility	🚀 In Progress
-3	Asset Expansion	✅ 8 Tokens
+3	Asset Expansion	✅ 12 Tokens
 4	Technical Upgrades	📅 Q4 2026
 5	Cross-Chain & DeFi	📅 Q1 2027
 6	Governance & DAO	📅 Q2 2027
+📊 Token Distribution by Continent
+Continent	Cities	Tokens	Value
+🇪🇺 Europe	Milan, London, Paris, Berlin, Zurich	5	€17,200,000
+🇦🇸 Asia	Singapore, Tokyo, Dubai, Seoul	4	€14,000,000
+🇺🇸 North America	New York, Toronto	2	€7,000,000
+🇦🇺 Oceania	Sydney	1	€4,500,000
+		12	€42,700,000
 🔗 Connect with Me
 Platform	Link
 GitHub	github.com/rossieugenio17
@@ -143,5 +170,4 @@ MIT
 
 Built on Tari · Secured by Monero · Tokenizing the World 🌍🔒
 
-#Tari #Monero #RWA #Tokenization #RealEstate #Privacy #Web3 #DeFi
-
+#Tari #Monero #RWA #Tokenization #RealEstate #Privacy #Web3 #DeFi #Global #Portfolio
