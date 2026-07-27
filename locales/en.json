@@ -1,0 +1,14 @@
+{
+  "order.confirmed": "Order #{id} confirmed.",
+  "order.completed": "Order #{id} completed. Tokens minted.",
+  "order.cancelled": "Order #{id} cancelled.",
+  "order.payment_reminder": "Payment reminder for order #{id}.",
+  "auth.login_success": "Login successful.",
+  "auth.login_failed": "Invalid credentials.",
+  "auth.token_expired": "Token expired. Please login again.",
+  "token.balance": "Balance for {address}: {balance} {symbol}",
+  "token.not_found": "Token not found.",
+  "error.server": "Internal server error.",
+  "error.validation": "Validation error: {details}",
+  "error.not_found": "Resource not found."
+}
