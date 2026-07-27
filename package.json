@@ -1,0 +1,12 @@
+{
+  "name": "my-monero-bounty",
+  "version": "1.0.0",
+  "description": "MyZubster Gateway - API Proxy with i18n support",
+  "main": "simple-server.js",
+  "scripts": {
+    "start": "node simple-server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.0"
+  }
+}

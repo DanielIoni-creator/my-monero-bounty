@@ -1,0 +1,12 @@
+{
+  "server_started": "சேவையகம் http://localhost:%d இல் தொடங்கப்பட்டது",
+  "dashboard_url": "டாஷ்போர்டு: http://localhost:%d",
+  "api_url": "API: http://localhost:%d/api/tokens",
+  "proxy_error": "ப்ராக்ஸி பிழை: %s",
+  "internal_error": "உள் சேவையக பிழை",
+  "not_found": "காணப்படவில்லை",
+  "unauthorized": "அங்கீகரிக்கப்படாதது",
+  "bad_request": "தவறான கோரிக்கை",
+  "success": "வெற்றி",
+  "welcome": "MyZubster Gateway க்கு வரவேற்கிறோம்"
+}

@@ -1,0 +1,12 @@
+{
+  "server_started": "Server started on http://localhost:%d",
+  "dashboard_url": "Dashboard: http://localhost:%d",
+  "api_url": "API: http://localhost:%d/api/tokens",
+  "proxy_error": "Proxy error: %s",
+  "internal_error": "Internal server error",
+  "not_found": "Not found",
+  "unauthorized": "Unauthorized",
+  "bad_request": "Bad request",
+  "success": "Success",
+  "welcome": "Welcome to MyZubster Gateway"
+}

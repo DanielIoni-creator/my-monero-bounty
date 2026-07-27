@@ -1,0 +1,12 @@
+{
+  "server_started": "Pelayan dimulakan di http://localhost:%d",
+  "dashboard_url": "Papan pemuka: http://localhost:%d",
+  "api_url": "API: http://localhost:%d/api/tokens",
+  "proxy_error": "Ralat proksi: %s",
+  "internal_error": "Ralat pelayan dalaman",
+  "not_found": "Tidak dijumpai",
+  "unauthorized": "Tidak dibenarkan",
+  "bad_request": "Permintaan tidak sah",
+  "success": "Berjaya",
+  "welcome": "Selamat datang ke MyZubster Gateway"
+}

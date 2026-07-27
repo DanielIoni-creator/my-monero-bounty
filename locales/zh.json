@@ -1,0 +1,12 @@
+{
+  "server_started": "服务器已启动于 http://localhost:%d",
+  "dashboard_url": "仪表盘: http://localhost:%d",
+  "api_url": "API: http://localhost:%d/api/tokens",
+  "proxy_error": "代理错误: %s",
+  "internal_error": "内部服务器错误",
+  "not_found": "未找到",
+  "unauthorized": "未授权",
+  "bad_request": "请求错误",
+  "success": "成功",
+  "welcome": "欢迎使用 MyZubster Gateway"
+}
