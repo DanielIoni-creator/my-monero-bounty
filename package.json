@@ -1,0 +1,17 @@
+{
+  "name": "my-monero-bounty",
+  "version": "1.0.0",
+  "description": "Webhook System for Order Events",
+  "main": "mongo-proxy.js",
+  "scripts": {
+    "start": "node mongo-proxy.js",
+    "test": "node --test test/*.test.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {
+    "supertest": "^7.0.0"
+  }
+}
