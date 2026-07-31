@@ -1,11 +1,24 @@
 const express = require('express');
 const path = require('path');
 const { MongoClient } = require('mongodb');
+const { createWebhookModule } = require('./webhooks');
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 console.log('🚀 Avvio Mongo Proxy...');
+
+// Webhook system (closes issue #5). Mounts:
+//   - admin CRUD at /api/admin/webhooks
+//   - order-event dispatcher on app.locals.webhooks.dispatchOrderEvent
+//
+// The webhook module reads its own Mongo URI from WEBHOOK_MONGO_URI /
+// MONGO_URI. The legacy tokens connection below is left untouched.
+app.use(express.json({ limit: '1mb' }));
+const webhookModule = createWebhookModule(null, { uri: process.env.WEBHOOK_MONGO_URI || process.env.MONGO_URI });
+webhookModule
+  .attach(app)
+  .catch((err) => console.error('⚠️ Webhook module failed to attach:', err && err.message ? err.message : err));
 
 // Credenziali e IP corretto
 const MONGO_USER = 'admin';
@@ -58,4 +71,5 @@ app.listen(PORT, () => {
     console.log(`✅ Server avviato su http://localhost:${PORT}`);
     console.log(`📄 Dashboard: http://localhost:${PORT}`);
     console.log(`📡 API: http://localhost:${PORT}/api/tokens`);
+    console.log(`🔔 Webhooks: http://localhost:${PORT}/api/admin/webhooks`);
 });

@@ -1,0 +1,20 @@
+{
+  "name": "my-monero-bounty-webhooks",
+  "version": "0.1.0",
+  "description": "Order-event webhook system for MyZubster Gateway (closes issue #5).",
+  "private": true,
+  "main": "mongo-proxy.js",
+  "scripts": {
+    "start": "node mongo-proxy.js",
+    "test": "jest --runInBand"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "mongodb": "^6.8.0",
+    "mongoose": "^8.4.0"
+  },
+  "devDependencies": {
+    "jest": "^29.7.0",
+    "supertest": "^7.0.0"
+  }
+}
