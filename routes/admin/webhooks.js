@@ -103,7 +103,7 @@ function validateUpdateBody(body) {
   return null;
 }
 
-function buildAdminWebhooksRouter({ store } = {}) {
+function buildAdminWebhooksRouter({ store, deliveryLog } = {}) {
   if (!store) {
     throw new TypeError('buildAdminWebhooksRouter: store is required');
   }
@@ -169,6 +169,79 @@ function buildAdminWebhooksRouter({ store } = {}) {
       const removed = await store.remove(req.params.id);
       if (!removed) return notFound(res);
       return res.status(204).end();
+    } catch (e) {
+      return next(e);
+    }
+  });
+
+  // GET /api/admin/webhooks/:id/deliveries — per-webhook delivery log
+  // (issue #21 operator-facing observability feature).
+  router.get('/webhooks/:id/deliveries', async (req, res, next) => {
+    try {
+      if (!deliveryLog || typeof deliveryLog.listForWebhook !== 'function') {
+        return res.status(503).json({
+          error: 'delivery_log_unavailable',
+          message: 'No delivery log is configured; pass `deliveryLog` to buildAdminWebhooksRouter().',
+        });
+      }
+      const row = await store.findById(req.params.id);
+      if (!row) return notFound(res);
+      const limit = Math.min(500, Math.max(1, Number(req.query.limit) || 50));
+      const after = typeof req.query.after === 'string' ? req.query.after : undefined;
+      const events = await deliveryLog.listForWebhook(req.params.id, { limit, after });
+      return res.json({
+        webhookId: req.params.id,
+        name: row.name,
+        url: row.url,
+        limit,
+        count: events.length,
+        events,
+      });
+    } catch (e) {
+      return next(e);
+    }
+  });
+
+  // POST /api/admin/webhooks/:id/test — fire one synthetic delivery so an
+  // operator can verify secret/HMAC wiring end-to-end. The payload is a
+  // fixed shape so the receiver's verifier can replay the digest.
+  router.post('/webhooks/:id/test', async (req, res, next) => {
+    try {
+      const row = await store.findById(req.params.id);
+      if (!row) return notFound(res);
+      const { dispatchOrderEvent } = require('../../webhooks');
+      const testPayload = {
+        __test: true,
+        webhookId: req.params.id,
+        emittedAt: new Date().toISOString(),
+      };
+      const summary = await dispatchOrderEvent(store, 'order.created', testPayload);
+      if (deliveryLog && typeof deliveryLog.record === 'function') {
+        try {
+          for (const r of summary.results || []) {
+            await deliveryLog.record({
+              webhookId: r.webhookId,
+              eventType: 'order.created',
+              ok: r.ok,
+              attempts: r.attempts,
+              lastStatus: r.lastStatus,
+              lastError: r.lastError,
+              url: r.url,
+              name: r.name,
+              deliveryPayloadPreview: JSON.stringify(testPayload),
+            });
+          }
+        } catch (_e) {
+          // ignore log failures
+        }
+      }
+      return res.status(202).json({
+        ok: summary.ok,
+        dispatched: summary.dispatched,
+        succeeded: summary.succeeded,
+        failed: summary.failed,
+        results: summary.results,
+      });
     } catch (e) {
       return next(e);
     }

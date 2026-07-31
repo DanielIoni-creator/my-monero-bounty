@@ -89,9 +89,15 @@ function attachWebhooks(app, options = {}) {
   if (!store) throw new TypeError('attachWebhooks: store is required');
   const base = (options.base || '').replace(/\/+$/, '');
   const bus = options.bus || getDefaultOrderEventBus();
+  const deliveryLog = options.deliveryLog || null;
+  const adminAuth = options.adminAuth || null;
 
-  const router = buildAdminWebhooksRouter({ store });
-  app.use(`${base}/api/admin`, router);
+  const router = buildAdminWebhooksRouter({ store, deliveryLog });
+  if (adminAuth) {
+    app.use(`${base}/api/admin`, adminAuth, router);
+  } else {
+    app.use(`${base}/api/admin`, router);
+  }
 
   const unsubscribers = [];
   for (const eventType of [
@@ -183,4 +189,8 @@ module.exports = {
   makeMongooseStore,
   getDefaultOrderEventBus,
   deliverWithRetry,
+  // issue #21 additions
+  InMemoryDeliveryLog: require('../services/deliveryLog').InMemoryDeliveryLog,
+  buildAdminAuth: require('../services/adminAuth').buildAdminAuth,
+  OrderState: require('../services/orderState').OrderState,
 };

@@ -2,22 +2,29 @@ const express = require('express');
 const path = require('path');
 const { MongoClient } = require('mongodb');
 const { createWebhookModule } = require('./webhooks');
+const { InMemoryDeliveryLog } = require('./services/deliveryLog');
+const { buildAdminAuth } = require('./services/adminAuth');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
 
 console.log('🚀 Avvio Mongo Proxy...');
 
-// Webhook system (closes issue #5). Mounts:
+// Webhook system (issue #5 baseline + issue #21 additive features):
 //   - admin CRUD at /api/admin/webhooks
-//   - order-event dispatcher on app.locals.webhooks.dispatchOrderEvent
+//   - per-webhook delivery log at /api/admin/webhooks/:id/deliveries
+//   - operator-facing test endpoint at /api/admin/webhooks/:id/test
+//   - Bearer-token admin auth (required in production when
+//     WEBHOOK_ADMIN_TOKEN / WEBHOOK_ADMIN_TOKENS is configured)
 //
 // The webhook module reads its own Mongo URI from WEBHOOK_MONGO_URI /
 // MONGO_URI. The legacy tokens connection below is left untouched.
 app.use(express.json({ limit: '1mb' }));
+const deliveryLog = new InMemoryDeliveryLog();
+const adminAuth = buildAdminAuth();
 const webhookModule = createWebhookModule(null, { uri: process.env.WEBHOOK_MONGO_URI || process.env.MONGO_URI });
 webhookModule
-  .attach(app)
+  .attach(app, { deliveryLog, adminAuth })
   .catch((err) => console.error('⚠️ Webhook module failed to attach:', err && err.message ? err.message : err));
 
 // Credenziali e IP corretto
