@@ -1,0 +1,17 @@
+{
+  "tokens": {
+    "listRetrieved": "Token recuperati con successo",
+    "notFound": "Nessun token trovato",
+    "fetchError": "Recupero dei token non riuscito"
+  },
+  "health": {
+    "ok": "Il servizio funziona correttamente",
+    "name": "API MyZubster Gateway"
+  },
+  "errors": {
+    "dbConnection": "Connessione al database non riuscita: {detail}",
+    "internalError": "Si è verificato un errore interno del server",
+    "upstreamError": "Errore del servizio upstream: {detail}",
+    "serviceUnavailable": "Il servizio non è temporaneamente disponibile"
+  }
+}
