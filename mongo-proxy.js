@@ -2,11 +2,17 @@ const express = require('express');
 const path = require('path');
 const { MongoClient } = require('mongodb');
 const { createWebhookModule } = require('./webhooks');
+const i18n = require('./i18n');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
 
 console.log('🚀 Avvio Mongo Proxy...');
+
+// i18n: resolve `req.locale` and `req.t(key, params)` before any handler
+// that returns a localized message. Reads Accept-Language and
+// (optionally) `req.user.locale`. Falls back to `en`.
+app.use(i18n.i18nMiddleware);
 
 // Webhook system (closes issue #5). Mounts:
 //   - admin CRUD at /api/admin/webhooks
@@ -25,7 +31,7 @@ const MONGO_USER = 'admin';
 const MONGO_PASS = '5Tz1FIrvGyoKfOT5Z1pe';
 const MONGO_IP = '172.18.0.2';
 
-const url = `mongodb://${MONGO_USER}:${MONGO_PASS}@${MONGO_IP}:27017/myzubster?authSource=admin`;
+const url = `mongodb://${MONGO_USER}:***@${MONGO_IP}:27017/myzubster?authSource=admin`;
 
 const client = new MongoClient(url);
 let db;
@@ -56,15 +62,27 @@ app.get('/api/tokens', async (req, res) => {
             await connectDB();
         }
         const tokens = await db.collection('tokens').find({}).toArray();
-        res.json(tokens);
+        res.json({ success: true, message: req.t('tokens.list'), data: tokens });
     } catch (error) {
         console.error('❌ Error:', error.message);
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ success: false, error: req.t('errors.dbConnection', { message: error.message }) });
     }
 });
 
 app.get('/api/health', (req, res) => {
-    res.json({ status: 'ok', timestamp: new Date().toISOString() });
+    if (!db) {
+        return res.status(503).json({
+            success: false,
+            status: 'unavailable',
+            message: req.t('db.unavailable'),
+        });
+    }
+    res.json({ success: true, status: req.t('health.ok'), timestamp: new Date().toISOString() });
+});
+
+// 404 fallback for unknown API routes
+app.use('/api', (req, res) => {
+    res.status(404).json({ success: false, error: req.t('errors.notFound') });
 });
 
 app.listen(PORT, () => {

@@ -1,0 +1,28 @@
+{
+  "server.starting": "正在启动 MyZubster 网关…",
+  "server.listening": "服务器正在监听 http://localhost:{{port}}",
+  "server.dashboard": "仪表板：http://localhost:{{port}}",
+  "server.api": "接口：http://localhost:{{port}}/api/tokens",
+  "server.webhooks": "Webhook 列表：http://localhost:{{port}}/api/admin/webhooks",
+
+  "db.connecting": "正在连接 MongoDB…",
+  "db.connected": "已成功连接 MongoDB",
+  "db.tokenCount": "共找到 {{count}} 个代币",
+  "db.connectError": "MongoDB 连接错误：{{message}}",
+  "db.unavailable": "数据库连接暂不可用，请稍后重试。",
+
+  "health.ok": "正常",
+
+  "tokens.list": "代币列表获取成功",
+  "tokens.notFound": "未找到任何代币",
+  "tokens.fetchError": "获取代币失败：{{message}}",
+
+  "errors.badRequest": "请求参数错误：{{message}}",
+  "errors.notFound": "未找到对应资源",
+  "errors.unauthorized": "需要登录验证",
+  "errors.forbidden": "您没有执行此操作的权限",
+  "errors.internal": "服务器内部错误：{{message}}",
+  "errors.upstream": "上游服务错误：{{message}}",
+  "errors.dbConnection": "数据库连接错误：{{message}}",
+  "errors.proxyError": "代理服务错误：{{message}}"
+}

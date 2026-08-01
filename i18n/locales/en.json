@@ -1,0 +1,28 @@
+{
+  "server.starting": "Starting MyZubster Gateway…",
+  "server.listening": "Server listening on http://localhost:{{port}}",
+  "server.dashboard": "Dashboard: http://localhost:{{port}}",
+  "server.api": "API: http://localhost:{{port}}/api/tokens",
+  "server.webhooks": "Webhooks: http://localhost:{{port}}/api/admin/webhooks",
+
+  "db.connecting": "Connecting to MongoDB…",
+  "db.connected": "Connected to MongoDB",
+  "db.tokenCount": "Found {{count}} tokens",
+  "db.connectError": "MongoDB connection error: {{message}}",
+  "db.unavailable": "Database connection is unavailable. Please try again shortly.",
+
+  "health.ok": "ok",
+
+  "tokens.list": "Tokens retrieved successfully",
+  "tokens.notFound": "No tokens found",
+  "tokens.fetchError": "Failed to fetch tokens: {{message}}",
+
+  "errors.badRequest": "Bad request: {{message}}",
+  "errors.notFound": "Resource not found",
+  "errors.unauthorized": "Authentication required",
+  "errors.forbidden": "You do not have permission to perform this action",
+  "errors.internal": "Internal server error: {{message}}",
+  "errors.upstream": "Upstream service error: {{message}}",
+  "errors.dbConnection": "Database connection error: {{message}}",
+  "errors.proxyError": "Proxy error: {{message}}"
+}

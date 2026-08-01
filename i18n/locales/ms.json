@@ -1,0 +1,28 @@
+{
+  "server.starting": "Memulakan MyZubster Gateway…",
+  "server.listening": "Pelayan mendengar di http://localhost:{{port}}",
+  "server.dashboard": "Papan pemuka: http://localhost:{{port}}",
+  "server.api": "API: http://localhost:{{port}}/api/tokens",
+  "server.webhooks": "Webhook: http://localhost:{{port}}/api/admin/webhooks",
+
+  "db.connecting": "Menyambung ke MongoDB…",
+  "db.connected": "Berjaya menyambung ke MongoDB",
+  "db.tokenCount": "Ditemui {{count}} token",
+  "db.connectError": "Ralat sambungan MongoDB: {{message}}",
+  "db.unavailable": "Sambungan pangkalan data tidak tersedia. Sila cuba sebentar lagi.",
+
+  "health.ok": "ok",
+
+  "tokens.list": "Senarai token berjaya diperoleh",
+  "tokens.notFound": "Tiada token ditemui",
+  "tokens.fetchError": "Gagal mendapatkan token: {{message}}",
+
+  "errors.badRequest": "Permintaan tidak sah: {{message}}",
+  "errors.notFound": "Sumber tidak ditemui",
+  "errors.unauthorized": "Pengesahan diperlukan",
+  "errors.forbidden": "Anda tidak mempunyai kebenaran untuk tindakan ini",
+  "errors.internal": "Ralat pelayan dalaman: {{message}}",
+  "errors.upstream": "Ralat perkhidmatan hulu: {{message}}",
+  "errors.dbConnection": "Ralat sambungan pangkalan data: {{message}}",
+  "errors.proxyError": "Ralat proksi: {{message}}"
+}
