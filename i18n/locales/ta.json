@@ -1,0 +1,14 @@
+{
+  "errors.internal": "உள் சேவையக பிழை",
+  "errors.bad_request": "தவறான கோரிக்கை",
+  "errors.not_found": "வளம் கிடைக்கவில்லை",
+  "errors.upstream_unavailable": "மேல் சேவை தற்சமயம் கிடைக்கவில்லை",
+  "errors.invalid_payload": "கோரிக்கை சுமை தவறானது",
+  "validation.required_field": "'{field}' புலம் கட்டாயமானது",
+  "validation.invalid_type": "'{field}' புலம் {expected} வகையாக இருக்க வேண்டும்",
+  "validation.out_of_range": "'{field}' புலம் {min} மற்றும் {max} இடையில் இருக்க வேண்டும்",
+  "api.tokens.list_failed": "டோக்கன் பட்டியலை ஏற்ற முடியவில்லை",
+  "api.health.ok": "சரி",
+  "webhook.signature_missing": "Webhook கையொப்பத் தலைப்பு இல்லை",
+  "webhook.signature_invalid": "Webhook கையொப்பம் தவறானது"
+}

@@ -1,0 +1,14 @@
+{
+  "errors.internal": "Errore interno del server",
+  "errors.bad_request": "Richiesta non valida",
+  "errors.not_found": "Risorsa non trovata",
+  "errors.upstream_unavailable": "Il servizio upstream non è al momento disponibile",
+  "errors.invalid_payload": "Il payload della richiesta non è valido",
+  "validation.required_field": "Il campo '{field}' è obbligatorio",
+  "validation.invalid_type": "Il campo '{field}' deve essere di tipo {expected}",
+  "validation.out_of_range": "Il campo '{field}' deve essere compreso tra {min} e {max}",
+  "api.tokens.list_failed": "Impossibile caricare l'elenco dei token",
+  "api.health.ok": "ok",
+  "webhook.signature_missing": "Intestazione della firma Webhook mancante",
+  "webhook.signature_invalid": "Firma Webhook non valida"
+}

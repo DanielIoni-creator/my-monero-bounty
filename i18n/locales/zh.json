@@ -1,0 +1,14 @@
+{
+  "errors.internal": "服务器内部错误",
+  "errors.bad_request": "请求无效",
+  "errors.not_found": "未找到资源",
+  "errors.upstream_unavailable": "上游服务暂不可用",
+  "errors.invalid_payload": "请求负载无效",
+  "validation.required_field": "字段“{field}”为必填项",
+  "validation.invalid_type": "字段“{field}”的类型必须为 {expected}",
+  "validation.out_of_range": "字段“{field}”的值必须介于 {min} 和 {max} 之间",
+  "api.tokens.list_failed": "无法加载代币列表",
+  "api.health.ok": "正常",
+  "webhook.signature_missing": "缺少 Webhook 签名标头",
+  "webhook.signature_invalid": "Webhook 签名无效"
+}

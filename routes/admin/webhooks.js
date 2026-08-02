@@ -5,12 +5,30 @@ const { ORDER_EVENT_TYPES } = require('../../models/Webhook');
 
 const VALID_EVENTS = new Set(ORDER_EVENT_TYPES);
 
-function badRequest(res, message, details) {
-  return res.status(400).json({ error: 'bad_request', message, ...(details ? { details } : {}) });
+function badRequest(req, res, message, details) {
+  const t = req && typeof req.t === 'function' ? req.t : (key) => key;
+  const locale = req && req.locale ? req.locale : 'en';
+  // Issue #22: surface the canonical localized label alongside the
+  // raw validator message so callers get a stable machine code plus
+  // a human-readable, locale-specific description.
+  return res.status(400).json({
+    error: 'bad_request',
+    message,
+    label: t('errors.bad_request'),
+    locale,
+    ...(details ? { details } : {}),
+  });
 }
 
-function notFound(res, message = 'webhook not found') {
-  return res.status(404).json({ error: 'not_found', message });
+function notFound(req, res, message = 'webhook not found') {
+  const t = req && typeof req.t === 'function' ? req.t : (key) => key;
+  const locale = req && req.locale ? req.locale : 'en';
+  return res.status(404).json({
+    error: 'not_found',
+    message,
+    label: t('errors.not_found'),
+    locale,
+  });
 }
 
 function isNonEmptyString(v) {
@@ -114,7 +132,7 @@ function buildAdminWebhooksRouter({ store } = {}) {
   router.post('/webhooks', async (req, res, next) => {
     try {
       const err = validateCreateBody(req.body);
-      if (err) return badRequest(res, err);
+      if (err) return badRequest(req, res, err);
       const created = await store.create({
         name: req.body.name,
         url: req.body.url,
@@ -143,7 +161,7 @@ function buildAdminWebhooksRouter({ store } = {}) {
   router.get('/webhooks/:id', async (req, res, next) => {
     try {
       const row = await store.findById(req.params.id);
-      if (!row) return notFound(res);
+      if (!row) return notFound(req, res);
       return res.json(row);
     } catch (e) {
       return next(e);
@@ -154,9 +172,9 @@ function buildAdminWebhooksRouter({ store } = {}) {
   router.put('/webhooks/:id', async (req, res, next) => {
     try {
       const err = validateUpdateBody(req.body);
-      if (err) return badRequest(res, err);
+      if (err) return badRequest(req, res, err);
       const updated = await store.update(req.params.id, req.body);
-      if (!updated) return notFound(res);
+      if (!updated) return notFound(req, res);
       return res.json(updated);
     } catch (e) {
       return next(e);
@@ -167,7 +185,7 @@ function buildAdminWebhooksRouter({ store } = {}) {
   router.delete('/webhooks/:id', async (req, res, next) => {
     try {
       const removed = await store.remove(req.params.id);
-      if (!removed) return notFound(res);
+      if (!removed) return notFound(req, res);
       return res.status(204).end();
     } catch (e) {
       return next(e);

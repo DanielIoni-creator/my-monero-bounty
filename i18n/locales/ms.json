@@ -1,0 +1,14 @@
+{
+  "errors.internal": "Ralat pelayan dalaman",
+  "errors.bad_request": "Permintaan tidak sah",
+  "errors.not_found": "Sumber tidak dijumpai",
+  "errors.upstream_unavailable": "Perkhidmatan hulu tidak tersedia buat masa ini",
+  "errors.invalid_payload": "Muatan permintaan tidak sah",
+  "validation.required_field": "Medan '{field}' diperlukan",
+  "validation.invalid_type": "Medan '{field}' mestilah jenis {expected}",
+  "validation.out_of_range": "Medan '{field}' mestilah antara {min} dan {max}",
+  "api.tokens.list_failed": "Tidak dapat memuatkan senarai token",
+  "api.health.ok": "ok",
+  "webhook.signature_missing": "Tajuk tandatangan Webhook hilang",
+  "webhook.signature_invalid": "Tandatangan Webhook tidak sah"
+}

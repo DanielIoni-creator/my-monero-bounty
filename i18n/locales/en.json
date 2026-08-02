@@ -1,0 +1,14 @@
+{
+  "errors.internal": "Internal server error",
+  "errors.bad_request": "Bad request",
+  "errors.not_found": "Resource not found",
+  "errors.upstream_unavailable": "Upstream service is currently unavailable",
+  "errors.invalid_payload": "Request payload is invalid",
+  "validation.required_field": "Field '{field}' is required",
+  "validation.invalid_type": "Field '{field}' must be of type {expected}",
+  "validation.out_of_range": "Field '{field}' must be between {min} and {max}",
+  "api.tokens.list_failed": "Unable to load token list",
+  "api.health.ok": "ok",
+  "webhook.signature_missing": "Webhook signature header is missing",
+  "webhook.signature_invalid": "Webhook signature is invalid"
+}

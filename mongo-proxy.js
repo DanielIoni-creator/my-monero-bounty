@@ -2,19 +2,25 @@ const express = require('express');
 const path = require('path');
 const { MongoClient } = require('mongodb');
 const { createWebhookModule } = require('./webhooks');
+const { createMiddleware } = require('./i18n');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
 
 console.log('🚀 Avvio Mongo Proxy...');
 
+// i18n (closes issue #22): must run before any route so handlers can
+// read req.locale and call req.t(...). Mounted after express.json so
+// body parsers get the raw payload first.
+app.use(express.json({ limit: '1mb' }));
+app.use(createMiddleware());
+
 // Webhook system (closes issue #5). Mounts:
 //   - admin CRUD at /api/admin/webhooks
 //   - order-event dispatcher on app.locals.webhooks.dispatchOrderEvent
 //
 // The webhook module reads its own Mongo URI from WEBHOOK_MONGO_URI /
-// MONGO_URI. The legacy tokens connection below is left untouched.
-app.use(express.json({ limit: '1mb' }));
+// The legacy tokens connection below is left untouched.
 const webhookModule = createWebhookModule(null, { uri: process.env.WEBHOOK_MONGO_URI || process.env.MONGO_URI });
 webhookModule
   .attach(app)
@@ -59,12 +65,17 @@ app.get('/api/tokens', async (req, res) => {
         res.json(tokens);
     } catch (error) {
         console.error('❌ Error:', error.message);
-        res.status(500).json({ error: error.message });
+        // Issue #22: return a localized internal error.
+        res.status(500).json({
+            error: 'internal_error',
+            message: req.t('api.tokens.list_failed'),
+            locale: req.locale,
+        });
     }
 });
 
 app.get('/api/health', (req, res) => {
-    res.json({ status: 'ok', timestamp: new Date().toISOString() });
+    res.json({ status: req.t('api.health.ok'), timestamp: new Date().toISOString() });
 });
 
 app.listen(PORT, () => {
