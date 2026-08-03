@@ -2,6 +2,7 @@ const express = require('express');
 const path = require('path');
 const { MongoClient } = require('mongodb');
 const { createWebhookModule } = require('./webhooks');
+const i18n = require('./i18n');
 
 const app = express();
 const PORT = process.env.PORT || 8080;
@@ -35,7 +36,6 @@ async function connectDB() {
         await client.connect();
         db = client.db('myzubster');
         console.log('✅ Connesso a MongoDB');
-        // Test: conta i token
         const count = await db.collection('tokens').countDocuments();
         console.log(`📊 Trovati ${count} token`);
     } catch (err) {
@@ -43,6 +43,12 @@ async function connectDB() {
     }
 }
 connectDB();
+
+// i18n middleware (closes issue #7): resolves req.locale and provides req.t()
+// for every request. Registered after the webhook module (webhook routes do
+// not need localization) and before the public routes so /api/tokens and
+// /api/health can use req.t().
+app.use(i18n.i18nMiddleware);
 
 app.use('/static', express.static(path.join(__dirname, 'static')));
 
@@ -55,16 +61,22 @@ app.get('/api/tokens', async (req, res) => {
         if (!db) {
             await connectDB();
         }
+        if (!db) {
+            return res.status(503).json({ error: req.t('errors.serviceUnavailable') });
+        }
         const tokens = await db.collection('tokens').find({}).toArray();
-        res.json(tokens);
+        if (!tokens || tokens.length === 0) {
+            return res.status(404).json({ message: req.t('tokens.notFound'), tokens: [] });
+        }
+        res.json({ message: req.t('tokens.listRetrieved'), tokens });
     } catch (error) {
         console.error('❌ Error:', error.message);
-        res.status(500).json({ error: error.message });
+        res.status(500).json({ error: req.t('errors.dbConnection', { detail: error.message }) });
     }
 });
 
 app.get('/api/health', (req, res) => {
-    res.json({ status: 'ok', timestamp: new Date().toISOString() });
+    res.json({ status: 'ok', service: req.t('health.name'), message: req.t('health.ok'), timestamp: new Date().toISOString() });
 });
 
 app.listen(PORT, () => {

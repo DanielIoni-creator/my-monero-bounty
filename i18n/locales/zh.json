@@ -1,0 +1,17 @@
+{
+  "tokens": {
+    "listRetrieved": "代币检索成功",
+    "notFound": "未找到任何代币",
+    "fetchError": "代币检索失败"
+  },
+  "health": {
+    "ok": "服务运行正常",
+    "name": "MyZubster 网关 API"
+  },
+  "errors": {
+    "dbConnection": "数据库连接失败：{detail}",
+    "internalError": "发生内部服务器错误",
+    "upstreamError": "上游服务错误：{detail}",
+    "serviceUnavailable": "服务暂时不可用"
+  }
+}

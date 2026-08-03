@@ -1,0 +1,17 @@
+{
+  "tokens": {
+    "listRetrieved": "Tokens retrieved successfully",
+    "notFound": "No tokens found",
+    "fetchError": "Failed to retrieve tokens"
+  },
+  "health": {
+    "ok": "Service is healthy",
+    "name": "MyZubster Gateway API"
+  },
+  "errors": {
+    "dbConnection": "Database connection failed: {detail}",
+    "internalError": "An internal server error occurred",
+    "upstreamError": "Upstream service error: {detail}",
+    "serviceUnavailable": "Service is temporarily unavailable"
+  }
+}

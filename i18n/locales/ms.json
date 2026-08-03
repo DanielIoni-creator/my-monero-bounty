@@ -1,0 +1,17 @@
+{
+  "tokens": {
+    "listRetrieved": "Token berjaya diambil",
+    "notFound": "Tiada token dijumpai",
+    "fetchError": "Gagal mengambil token"
+  },
+  "health": {
+    "ok": "Perkhidmatan berfungsi dengan baik",
+    "name": "API Gateway MyZubster"
+  },
+  "errors": {
+    "dbConnection": "Sambungan pangkalan data gagal: {detail}",
+    "internalError": "Ralat pelayan dalaman telah berlaku",
+    "upstreamError": "Ralat perkhidmatan huluan: {detail}",
+    "serviceUnavailable": "Perkhidmatan buat sementara tidak tersedia"
+  }
+}
