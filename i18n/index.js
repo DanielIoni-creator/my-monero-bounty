@@ -42,6 +42,15 @@ function resolveTag(tag) {
   return DEFAULT_LOCALE;
 }
 
+// Return a supported primary language code, or null when the tag is not
+// supported. Unlike resolveTag(), this preserves the distinction between an
+// explicit English preference and an unsupported tag that merely falls back.
+function supportedTag(tag) {
+  if (!tag || typeof tag !== 'string') return null;
+  const base = tag.trim().toLowerCase().split('-')[0];
+  return CODES.includes(base) ? base : null;
+}
+
 // Parse an Accept-Language header into an ordered list of candidate tags.
 function parseAcceptLanguage(header) {
   if (!header) return [];
@@ -65,17 +74,18 @@ function parseAcceptLanguage(header) {
 }
 
 // Resolve the best locale for a request:
-// 1) explicit user profile language (if route populated req.user.locale)
-// 2) Accept-Language header (in priority order)
+// 1) Accept-Language header (in priority order)
+// 2) explicit user profile language (if route populated req.user.locale)
 // 3) "en" fallback.
 function resolveLocale(req) {
-  if (req && req.user && req.user.locale && CODES.includes(String(req.user.locale).toLowerCase())) {
-    return String(req.user.locale).toLowerCase();
-  }
   const header = req && req.headers && req.headers['accept-language'];
   for (const tag of parseAcceptLanguage(header)) {
-    const resolved = resolveTag(tag);
-    if (resolved !== DEFAULT_LOCALE) return resolved;
+    const resolved = supportedTag(tag);
+    if (resolved) return resolved;
+  }
+  if (req && req.user && req.user.locale) {
+    const resolved = supportedTag(String(req.user.locale));
+    if (resolved) return resolved;
   }
   return DEFAULT_LOCALE;
 }

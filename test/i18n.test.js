@@ -83,11 +83,14 @@ describe('translate', () => {
 });
 
 describe('resolveLocale (request)', () => {
-  test('uses user profile locale when present and supported', () => {
-    expect(resolveLocale({ user: { locale: 'zh' }, headers: { 'accept-language': 'en' } })).toBe('zh');
+  test('uses a supported Accept-Language preference before the user profile', () => {
+    expect(resolveLocale({ user: { locale: 'zh' }, headers: { 'accept-language': 'en' } })).toBe('en');
   });
-  test('ignores unsupported user profile locale', () => {
+  test('ignores an unsupported user profile locale', () => {
     expect(resolveLocale({ user: { locale: 'fr' }, headers: { 'accept-language': 'zh' } })).toBe('zh');
+  });
+  test('falls back to a supported user profile when the header is unsupported', () => {
+    expect(resolveLocale({ user: { locale: 'ta' }, headers: { 'accept-language': 'fr,de' } })).toBe('ta');
   });
   test('uses Accept-Language when no user profile', () => {
     expect(resolveLocale({ headers: { 'accept-language': 'ms,en;q=0.1' } })).toBe('ms');
@@ -97,8 +100,8 @@ describe('resolveLocale (request)', () => {
     expect(resolveLocale({ headers: {} })).toBe('en');
     expect(resolveLocale({})).toBe('en');
   });
-  test('explicit user locale wins over header even for regional tags', () => {
-    expect(resolveLocale({ user: { locale: 'ta' }, headers: { 'accept-language': 'zh-CN' } })).toBe('ta');
+  test('normalizes a supported regional header before considering the user profile', () => {
+    expect(resolveLocale({ user: { locale: 'ta' }, headers: { 'accept-language': 'zh-CN' } })).toBe('zh');
   });
 });
 
