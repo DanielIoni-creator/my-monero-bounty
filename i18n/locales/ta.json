@@ -1,28 +1,17 @@
 {
-  "server.starting": "MyZubster Gateway தொடங்குகிறது…",
-  "server.listening": "சேவையகம் கேட்கிறது http://localhost:{{port}}",
-  "server.dashboard": "டாஷ்போர்டு: http://localhost:{{port}}",
-  "server.api": "API: http://localhost:{{port}}/api/tokens",
-  "server.webhooks": "Webhook-கள்: http://localhost:{{port}}/api/admin/webhooks",
-
-  "db.connecting": "MongoDB-இணைக்கிறது…",
-  "db.connected": "MongoDB வெற்றிகரமாக இணைக்கப்பட்டது",
-  "db.tokenCount": "{{count}} டோக்கன்கள் கண்டறியப்பட்டன",
-  "db.connectError": "MongoDB இணைப்பு பிழை: {{message}}",
-  "db.unavailable": "தரவுத்தள இணைப்பு கிடைக்கவில்லை. சிறிது நேரம் கழித்து மீண்டும் முயற்சிக்கவும்.",
-
-  "health.ok": "சரி",
-
-  "tokens.list": "டோக்கன் பட்டியல் வெற்றிகரமாக பெறப்பட்டது",
-  "tokens.notFound": "டோக்கன்கள் எதுவும் கிடைக்கவில்லை",
-  "tokens.fetchError": "டோக்கன்களை பெறுவதில் தோல்வி: {{message}}",
-
-  "errors.badRequest": "தவறான கோரிக்கை: {{message}}",
-  "errors.notFound": "வளம் கிடைக்கவில்லை",
-  "errors.unauthorized": "அங்கீகாரம் தேவை",
-  "errors.forbidden": "இந்த செயலை செய்ய உங்களுக்கு அனுமதி இல்லை",
-  "errors.internal": "உள் சேவையக பிழை: {{message}}",
-  "errors.upstream": "மேல்நிலை சேவை பிழை: {{message}}",
-  "errors.dbConnection": "தரவுத்தள இணைப்பு பிழை: {{message}}",
-  "errors.proxyError": "பதிலாள் பிழை: {{message}}"
+  "tokens": {
+    "listRetrieved": "டோக்கன்கள் வெற்றிகரமாக பெறப்பட்டன",
+    "notFound": "டோக்கன்கள் எதுவும் கிடைக்கவில்லை",
+    "fetchError": "டோக்கன்களை பெற முடியவில்லை"
+  },
+  "health": {
+    "ok": "சேவை ஆரோக்கியமாக இயங்குகிறது",
+    "name": "MyZubster கேட்வே API"
+  },
+  "errors": {
+    "dbConnection": "தரவுத்தள இணைப்பு தோல்வியடைந்தது: {detail}",
+    "internalError": "உள் சேவையக பிழை ஏற்பட்டது",
+    "upstreamError": "மேல்நிலை சேவை பிழை: {detail}",
+    "serviceUnavailable": "சேவை தற்காலிகமாக கிடைக்கவில்லை"
+  }
 }

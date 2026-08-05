@@ -6,6 +6,7 @@
   "main": "mongo-proxy.js",
   "scripts": {
     "start": "node mongo-proxy.js",
+    "start:proxy": "node simple-server.js",
     "test": "jest --runInBand"
   },
   "dependencies": {
